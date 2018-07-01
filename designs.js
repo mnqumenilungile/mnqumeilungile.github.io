@@ -1,13 +1,14 @@
 (function() {
   'use strict';
 
-  // set variables
+  // variables
   const $colorPicker = document.getElementById("colorPicker");
   const $sizePicker = document.getElementById("sizePicker");
   const $table = document.getElementById("pixel_canvas");
 
-  // add size listener
+  // size listener
   $sizePicker.addEventListener('submit', function() {
+    event.preventDefault();
        
     // input data in draw grid
     let width = document.getElementById("input_width").value;
@@ -28,7 +29,7 @@
     }
   }
 
-  // change color listener if clicked
+  // change color listener
   function changeColor() {
     this.style.background = $colorPicker.value;
   }
