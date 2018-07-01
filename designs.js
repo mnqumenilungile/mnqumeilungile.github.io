@@ -8,9 +8,7 @@
 
   // add size listener
   $sizePicker.addEventListener('submit', function() {
-    // prevent page refresh on submit
-    event.preventDefault();
-
+       
     // input data in draw grid
     let width = document.getElementById("input_width").value;
     let height = document.getElementById("input_height").value;
